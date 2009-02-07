@@ -13,7 +13,7 @@ def main():
             """,
             author=u"Justin Riley",
             author_email="justin.t.riley@gmail.com",
-            license = "MIT",
+            license = "GPL2",
             url="http://web.mit.edu/jtriley/www",
             classifiers=[
               'Environment :: Console',
