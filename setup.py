@@ -3,40 +3,39 @@
 from setuptools import setup
 
 def main():
-    setup(name="pyneural",
-            # metadata
-            version="0.1",
-            description="Neural Network Library for Python",
-            long_description="""
-            PyNeural provides a probabilistic random weight change algorithm implemented in python.
-            It should eventually take advantage of GPU's via python-cuda/pycuda.  
-            """,
-            author=u"Justin Riley",
-            author_email="justin.t.riley@gmail.com",
-            license = "GPL2",
-            url="http://web.mit.edu/jtriley/www",
-            classifiers=[
-              'Environment :: Console',
-              'Development Status :: 4 - Beta',
-              'Intended Audience :: Developers',
-              'Intended Audience :: Other Audience',
-              'Intended Audience :: Science/Research',
-              'License :: OSI Approved :: MIT License',
-              'Natural Language :: English',
-              'Programming Language :: Python',
-              'Topic :: Scientific/Engineering',
-              'Topic :: Scientific/Engineering :: Mathematics',
-              ],
+    setup(
+        name="pyneural",
+        version="0.1",
+        description="Neural Network Library for Python",
+        long_description="""
+        PyNeural provides a probabilistic random weight change algorithm implemented in python.
+        It should eventually take advantage of GPU's via python-cuda/pycuda.  
+        """,
+        author=u"Justin Riley",
+        author_email="justin.t.riley@gmail.com",
+        license = "GPL2",
+        url="http://web.mit.edu/jtriley/www",
+        classifiers=[
+          'Environment :: Console',
+          'Development Status :: 4 - Beta',
+          'Intended Audience :: Developers',
+          'Intended Audience :: Other Audience',
+          'Intended Audience :: Science/Research',
+          'Natural Language :: English',
+          'Programming Language :: Python',
+          'Topic :: Scientific/Engineering',
+          'Topic :: Scientific/Engineering :: Mathematics',
+          ],
 
-            # build info
-            packages=["pyneural"],
-            zip_safe=False,
+        # build info
+        packages=['pyneural'],
 
-            install_requires=[
-                "numpy",
-            ],
+        install_requires=[
+            "numpy",
+        ],
 
-            package_dir={"pyneural": "src"},
+        package_dir={"pyneural": "pyneural"},
+        zip_safe = True,
     )
 
 if __name__ == '__main__':
